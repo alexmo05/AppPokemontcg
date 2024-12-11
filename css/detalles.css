@@ -1,0 +1,175 @@
+/* Estilos generales del cuerpo */
+body {
+    font-family: 'Pokemon Solid', 'Arial', sans-serif;
+    background-color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333; /* Color de texto global */
+  }
+  
+  /* Estilos del header */
+  header {
+    width: 100%;
+    background-color: #FFCC00; /* Amarillo Pokémon */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .header-background h1 {
+    color: #E60012; /* Rojo Pokémon */
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 0;
+    font-family: 'Pokemon Solid', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  
+  /* Contenedor principal */
+  .content-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  /* Estilos del contenido principal */
+  .main-content {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Detalles de la carta */
+  #cardDetails {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    gap: 20px; /* Añadir espacio entre la imagen y el texto */
+  }
+  
+  /* Imagen de la carta */
+  .card-image {
+    width: 40%; /* La imagen ocupará el 40% del espacio */
+  }
+  
+  .card-image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Información de la carta */
+  .card-text {
+    width: 55%; /* El texto ocupará el 55% */
+    text-align: left;
+    padding-left: 20px;
+  }
+  
+  .card-text h2 {
+    color: #E60012;
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+  }
+  
+  /* Estilo para los párrafos del texto */
+  .card-text p {
+    font-size: 1.2em;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .card-text span {
+    font-weight: bold;
+    color: #000;
+  }
+  
+  /* Botones */
+  .search-button {
+    padding: 12px 25px;
+    background-color: #E60012;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .search-button:hover {
+    background-color: #FFCC00;
+    transform: translateY(-2px);
+  }
+  
+  .search-button:focus {
+    outline: none;
+  }
+  
+  /* Estilos del footer */
+  footer {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1em;
+    position: relative;
+    bottom: 0;
+    margin-top: 20px;
+  }
+  
+  footer p {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+  }
+  
+  /* Para dispositivos móviles */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2em;
+    }
+  
+    #cardDetails {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .card-image {
+      width: 80%; /* La imagen ocupará más espacio en pantallas pequeñas */
+      margin-bottom: 20px;
+    }
+  
+    .card-text {
+      width: 100%;
+      padding-left: 0;
+    }
+  
+    .search-button {
+      width: 100%;
+      padding: 15px 0;
+    }
+  
+    .main-content {
+      padding: 10px;
+    }
+  }
+  
