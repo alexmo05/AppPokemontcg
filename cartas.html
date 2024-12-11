@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cartas Pokémon TCG</title>
+  <link rel="stylesheet" href="css/style.css">   <!-- Estilos generales -->
+  <link rel="stylesheet" href="css/cartas.css">  <!-- Estilos específicos para cartas -->
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <img src="logo.png" alt="Logo" class="logo">
+      <nav class="nav-menu">
+        <a href="index.html">Inicio</a>
+        <a href="cartas.html">Cartas</a>
+        <a href="favoritos.html">Favoritos</a>
+        <a href="#">Acerca de</a>
+      </nav>
+      <div class="login-container">
+        <img src="images/login-icon.png" alt="Iniciar sesión" class="login-image">
+      </div>
+    </div>
+  </header>
+
+  <main class="results-container">
+   
+   
+<section>
+  <div class="background-container">
+    <h1>Bienvenido</h1>
+    <p>Este es un texto sobre una imagen de fondo.</p>
+</div>
+
+</section>
+
+   <section>
+    <div class="main-content">
+      <section class="search-container" style="margin-top: 30px;">
+        <input type="text" id="search" placeholder="Buscar por nombre..." class="search-input">
+        <button id="searchButton" class="search-button">Buscar</button>
+        <button id="favoritesButton" class="search-button">Favoritos</button>
+      </section>
+
+      <section class="filters ">
+        <select id="type">
+          <option value="all">Todos los tipos</option>
+          <option value="Fire">Fire</option>
+          <option value="Water">Water</option>
+          <option value="Grass">Grass</option>
+          <option value="Lightning">Lightning</option>
+          <option value="Psychic">Psychic</option>
+          <option value="Fighting">Fighting</option>
+          <option value="Darkness">Darkness</option>
+          <option value="Metal">Metal</option>
+          <option value="Fairy">Fairy</option>
+          <option value="Dragon">Dragon</option>
+          <option value="Ghost">Ghost</option>
+          <option value="Ice">Ice</option>
+          <option value="Normal">Normal</option>
+          <option value="Poison">Poison</option>
+          <option value="Bug">Bug</option>
+          <option value="Rock">Rock</option>
+          <option value="Ground">Ground</option>
+          <option value="Steel">Steel</option>
+          <option value="Unknown">Unknown</option>
+        </select>
+      
+        <select id="rarity">
+          <option value="all">Todas las rarezas</option>
+          <option value="Common">Común</option>
+          <option value="Uncommon">Poco común</option>
+          <option value="Rare">Rara</option>
+          <option value="Rare Holo">Rara Holográfica</option>
+          <option value="Mythic">Mítica</option>
+          <option value="Promo">Promo</option>
+        </select>
+      </section>
+
+      <section id="results" class="results-container">
+        <!-- Aquí aparecerán los resultados -->
+      </section>
+   </section>
+   
+    
+  </main>
+
+  <footer>
+    <p>💥 Desarrollado por Alex y Andres 💥</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

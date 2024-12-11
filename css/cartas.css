@@ -1,0 +1,235 @@
+
+
+:root {
+  --pokeball-red: #ee1515; /* Rojo de la Pokébola */
+  --pokemon-yellow: #ffcc00; /* Amarillo Pokémon */
+  --electric-blue: #3b4cca; /* Azul eléctrico */
+  --grass-green: #78c850; /* Verde hierba */
+  --dark-bg: #0a0a0a; /* Fondo oscuro */
+  --card-bg: #f0eeee; /* Fondo claro para las tarjetas */
+  --white: #ffffff; /* Blanco */
+
+}
+
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    text-align: center;
+  
+}
+ 
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.logo {
+    max-height: 50px;
+    margin-right: auto;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.nav-menu a:hover {
+    background-color: #575757;
+}
+
+.login-container {
+    margin-left: auto;
+}
+
+.login-icon {
+    display: block;
+}
+
+.login-image {
+    max-height: 40px;
+}
+
+/* Contenedor principal */
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+/* Contenido central */
+
+
+
+.search-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px; /* Añadir espacio entre el buscador y los filtros */
+}
+
+.search-input, .search-button, .remove-favorite-btn, select {
+  padding: 12px;
+  font-size: 1.1rem;
+  border-radius: 25px;
+  border: 2px solid var(--electric-blue);
+  background: var(--dark-bg);
+  color: var(--white);
+  text-align: center;
+  box-shadow: 0 0 10px rgba(59, 76, 202, 0.7);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+/* Efecto al pasar el cursor sobre los botones */
+.search-input:hover, .search-button:hover, select:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(59, 76, 202, 1);
+}
+
+/* Estilo para los selectores (Tipo y Rareza) */
+select {
+  background: var(--dark-bg);
+  color: var(--white);
+  font-size: 1rem;
+  border: 2px solid var(--electric-blue);
+  border-radius: 25px;
+  box-shadow: 0 0 10px rgba(59, 76, 202, 0.7);
+  cursor: pointer;
+  padding: 10px;
+  width: 200px;
+  transition: all 0.3s ease;
+}
+
+select:focus {
+  outline: none;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(59, 76, 202, 1);
+}
+
+/* Resultado */
+#results {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+/* Tarjetas */
+.card {
+  background: var(--card-bg);
+  border: 2px solid var(--electric-blue);
+  border-radius: 10px;
+  padding: 15px;
+  width: 200px;
+  text-align: center;
+  color: var(--dark-bg);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: var(--electric-blue);
+  text-shadow: 0 0 5px var(--dark-bg), 0 0 10px var(--pokemon-yellow);
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: var(--dark-bg);
+}
+
+/* Footer */
+footer p {
+  margin: 20px;
+  font-size: 0.8rem;
+  text-align: center;
+  color: var(--white);
+  text-shadow: 0 0 5px var(--dark-bg);
+}
+
+
+.details-btn{
+  padding: 12px;
+  font-size: 0.8rem;
+  border-radius: 25px;
+  border: 2px solid var(--electric-blue);
+  background: var(--white-bg);
+  color: var(--black);
+  text-align: center;
+  box-shadow: 0 0 10px rgba(59, 76, 202, 0.7);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.favorite-btn{
+  padding: 12px;
+  font-size: 0.9rem;
+  border-radius: 25px;
+  border: 2px solid var(--electric-blue);
+  background: var(--white-bg);
+  color: var(--black);
+  text-align: center;
+  box-shadow: 0 0 10px rgba(59, 76, 202, 0.7);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+.background-container {
+    background-image: url('../foto.webp'); /* Ruta de la imagen */
+    background-size: contain; /* Asegura que la imagen completa sea visible */
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    width: 100%; /* Ancho del contenedor */
+    height: 400px; /* Ajusta según el alto deseado */
+    color: white; /* Contraste para el texto */
+    display: flex; /* Permite centrar contenido dentro del contenedor */
+    flex-direction: column; /* Orienta el contenido en columna */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    text-align: center; /* Alinea texto */
+}
