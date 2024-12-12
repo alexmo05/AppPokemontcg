@@ -31,5 +31,5 @@ addToFavoritesButton.addEventListener('click', () => {
 
 // Volver a la página anterior (búsqueda)
 goBackButton.addEventListener('click', () => {
-  window.location.href = 'index.html';
+  window.location.href = 'cartas.html';
 });

@@ -17,6 +17,7 @@ body {
     padding: 0;
     background-color: var(--pokemon-white);
     color: var(--pokemon-black);
+    font-family: 'Poppins', sans-serif;
    
 }
 
