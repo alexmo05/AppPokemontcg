@@ -40,7 +40,7 @@ header {
 }
 
 .logo {
-    max-height: 50px;
+    max-height: 70px;
     margin-right: auto;
 }
 
@@ -183,13 +183,17 @@ select:focus {
   color: var(--dark-bg);
 }
 
-/* Footer */
-footer p {
-  margin: 20px;
-  font-size: 0.8rem;
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
   text-align: center;
-  color: var(--white);
-  text-shadow: 0 0 5px var(--dark-bg);
+  font-size: 1em;
+}
+
+footer p {
+  margin: 0;
+  font-weight: bold;
 }
 
 
@@ -220,16 +224,15 @@ footer p {
 
 
 .background-container {
-    background-image: url('../img/foto.webp'); /* Ruta de la imagen */
+    background-image: url('../img/logo\ \(2\).png') ; /* Ruta de la imagen */
     background-size: contain; /* Asegura que la imagen completa sea visible */
     background-position: center; /* Centra la imagen en el contenedor */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
-    width: 100%; /* Ancho del contenedor */
-    height: 400px; /* Ajusta según el alto deseado */
+    width: 50%; /* Ancho del contenedor */
+    height: 200px; /* Ajusta según el alto deseado */
     color: white; /* Contraste para el texto */
-    display: flex; /* Permite centrar contenido dentro del contenedor */
-    flex-direction: column; /* Orienta el contenido en columna */
+   padding-left: 750px;
     justify-content: center; /* Centra verticalmente */
     align-items: center; /* Centra horizontalmente */
-    text-align: center; /* Alinea texto */
+  
 }
